@@ -1,37 +1,21 @@
-## Welcome to GitHub Pages
+## VIP视频解析
 
-You can use the [editor on GitHub](https://github.com/zhangyajie9341/VIP/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+全网VIP视频解析聚合接口，支持（优酷、爱奇艺、腾讯视频、搜狐视频等）
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+本页面收集网络上的VIP视频解析API，并做了一个整理集合
 
-### Markdown
+## 使用说明
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+选择视频解析API，复制需VIP播放的视频至视频地址栏，点击播放即可免VIP播放
 
-```markdown
-Syntax highlighted code block
+### API源设置
 
-# Header 1
-## Header 2
-### Header 3
+如页面提供的API失效，可自行修改API列表，一行一个，设置后即可自动生成下拉列表。
 
-- Bulleted
-- List
+设置将存储为Cookie，方便下次直接使用。
 
-1. Numbered
-2. List
+如果设置错误可点击“恢复默认”，恢复成默认设置。
 
-**Bold** and _Italic_ and `Code` text
+## 更多API及详细说明
 
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/zhangyajie9341/VIP/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+https://yantuz.cn/466.html
