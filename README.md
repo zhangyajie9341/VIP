@@ -17,5 +17,4 @@
 如果设置错误可点击“恢复默认”，恢复成默认设置。
 
 ## 更多API及详细说明
-
-https://yantuz.cn/466.html
+https://vip.pvp.lol
