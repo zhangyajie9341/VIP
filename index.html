@@ -164,11 +164,15 @@ http://v.2gty.com/apiurl/yun.php?url=</textarea>
 		$("#play").click(function(){
 			$api = $("#api").val();
 			$url = $("#url").val();
-			if($url == "" || $url == null || !/^http.*$/.test($url)){
+			if($api != "http://z1.m1907.cn/?jx=" && ($url == "" || $url == null || !/^http.*$/.test($url))){
 				alert('视频地址不正确！');
 				return;
 			}
-			if($url == "" || $url == null || !/^http.*=$/.test($api)){
+			if($api != "http://z1.m1907.cn/?jx=" && ($url == "" || $url == null || !/^http.*$/.test($url))){
+				alert('视频地址不正确！');
+				return;
+			}
+			if($api != "http://z1.m1907.cn/?jx=" && ($url == "" || $url == null || !/^http.*=$/.test($api))){
 				alert('无效API！');
 				return;
 			}
