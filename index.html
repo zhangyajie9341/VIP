@@ -166,15 +166,35 @@ http://v.2gty.com/apiurl/yun.php?url=</textarea>
     <script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="https://cdn.bootcss.com/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
     <script>
+	    function setApi(){
+		    $("#api").children().remove();
+			var apilist = $("#apiList").val().split(/\r?\n/);
+			for(var i=0;i<apilist.length;i++){
+				$("#api").append("<option>"+apilist[i]+"</option>");
+			}
+	    }
+		$("#apiList").blur(function(){
+			setApi();
+			$.cookie("apiList",$("#apiList").val());
+		});
+		$("#play").click(function(){
+			$api = $("#api").val();
+			$url = $("#url").val();
+			if($api != "http://z1.m1907.cn/?jx=" && ($url == "" || $url == null || !/^http.*$/.test($url))){
+				alert('视频地址不正确！');
+				return;
+			}
+			if($api != "http://z1.m1907.cn/?jx=" && ($url == "" || $url == null || !/^http.*$/.test($url))){
+				alert('视频地址不正确！');
+				return;
+			}
+			if($api != "http://z1.m1907.cn/?jx=" && ($url == "" || $url == null || !/^http.*=$/.test($api))){
+				alert('无效API！');
+				return;
+			}
+			window.open($api+$url);
+		});
 
-	    
-	    
-	    
-	    
-	    
-	    
-	    
-	    
 	    function init(){
 		    var ckapi = $.cookie("apiList");
 		    if(ckapi && ckapi != ""){
